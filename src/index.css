@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  transition: background 0.4s ease-in-out, color 0.3s ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* 🎨 Темы */
+body.theme-light {
+  background-image: url('./assets/light-bg.jpg');
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.theme-dark {
+  background-image: url('./assets/dark-bg.jpg');
+  background-color: #121212;
+  color: #fff;
+}
+
+body.theme-forest {
+  background-image: url('./assets/forest.jpg');
+  background-color: #013220;
+  color: #d0ffd0;
+}
+
+body.theme-ocean {
+  background-image: url('./assets/ocean.jpg');
+  background-color: #003B73;
+  color: #aefeff;
+}
+
+body.theme-cyberpunk {
+  background-image: url('./assets/cyberpunk.jpg');
+  background-color: #0f0c29;
+  color: #39ff14;
+}
+
+body.theme-sunset {
+  background-image: url('./assets/sunset.jpg');
+  background-color: #FF6E7F;
+  color: #fff8f2;
+}
+
+/* ✨ Hover-анимации для задач */
+.task-item {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.task-item:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 💡 Неоновый переключатель */
+.theme-toggle {
+  transition: 0.4s ease;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.4));
+}
+.theme-toggle:hover {
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.8));
+}
+
+/* Кнопки */
+button {
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.05);
+}
